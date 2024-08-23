@@ -1,0 +1,83 @@
+/* src/styles/Sidebar.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.sidebar, .sidebar-header p, .sidebar-contact p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Ensure the sidebar is hidden when closed */
+    width: 28vw; /* Adjust width */
+    height: 95vh; /* Adjust height */
+    background-color: #0d0d0d; /* Dark background */
+    color: white;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 40px 30px; /* Adjust padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    height: 100%;
+}
+
+.sidebar-header {
+    text-align: left;
+    margin-bottom: 10px; /* Reduce space below header */
+}
+
+.sidebar-header h1 {
+    font-size: 28px;
+    font-weight: 900; /* Extra bold for the heading */
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sidebar-header p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600; /* Slightly bolder for the paragraph text */
+    color: white;
+}
+
+.sidebar-header hr {
+    border: 1;
+    border-top: 1px solid;
+    margin-bottom: 10px; /* Reduce space below HR */
+}
+
+.sidebar-contact {
+    margin-top: 0; /* Ensure there's no margin on top */
+}
+
+.sidebar-contact p {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px; /* Reduce space between contact items */
+    font-weight: 900; /* Bold contact details */
+    color: white;
+}
+
+.sidebar-cta {
+    text-align: center;
+    margin-top: auto; /* Keep this at the bottom */
+}

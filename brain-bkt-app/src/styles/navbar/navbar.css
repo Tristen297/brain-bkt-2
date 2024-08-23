@@ -1,0 +1,23 @@
+/* src/styles/Navbar.css */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+}
+
+.navbar-logo img {
+    height: 100px;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar-right-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
