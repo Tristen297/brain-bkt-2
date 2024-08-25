@@ -10,18 +10,18 @@ function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             <div className="sidebar-content">
                 <div className="sidebar-header">
-                    <h1>Frisk</h1>
-                    <p>We are a digital agency that helps businesses develop immersive and engaging experiences.</p>
+                    <h1>BrainBkt</h1>
+                    <p>We are a creative studio that empowers businesses with visually compelling and impactful designs.</p>
                     <hr />
                 </div>
                 <div className="sidebar-contact">
-                    <p>27 Division St, New York,</p>
-                    <p>NY 10002, USA</p>
-                    <p>+1 800 123 654 987</p>
-                    <p>frisk.agency@mail.com</p>
+                    <p>878 Oberting Rd,</p>
+                    <p>Greendale, IN 47025</p>
+                    <p>+1 812 577 3445</p>
+                    <p>brainbkt@gmail.com</p>
                 </div>
                 <div className="sidebar-cta">
-                    <button className="cta-button">LET'S TALK WITH US</button>
+                    <button className="cta-button">TALK WITH US</button>
                 </div>
             </div>
         </div>

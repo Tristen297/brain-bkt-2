@@ -1,0 +1,87 @@
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+/* Hero Content Container */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hero Title Container */
+.hero-title {
+    width: 100%;
+    max-width: 1400px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* First Line Aligned Left */
+.hero-text-transform {
+    text-align: left;
+}
+
+/* Second Line Aligned Right */
+.hero-text-cutting {
+    text-align: right;
+}
+
+/* Styling for Both H1 Tags */
+.hero-title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000000;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Container for Subtext and Button */
+.hero-subtext-button-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Take up the right 60% of the container */
+    margin-left: auto; /* Align container to the right */
+    text-align: left; /* Align content inside to the left */
+}
+
+/* Hero Subtext */
+.hero-subtext {
+    margin-bottom: 20px;
+}
+
+.hero-subtext p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0 20px;
+    margin-right: 200px;
+}
+
+/* Hero Button */
+.hero-button button {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 20px
+}
+
+.hero-button button:hover {
+    transform: scale(1.01); /* Slightly increase the size */
+    background-color: #662f8f; /* Change background color on hover */
+    border-color: #abd038; /* Change border color on hover */
+    color: #abd038; /* Change X icon color on hover */
+}
+

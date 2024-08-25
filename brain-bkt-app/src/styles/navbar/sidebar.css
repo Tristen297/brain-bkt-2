@@ -1,4 +1,4 @@
-/* src/styles/Sidebar.css */
+/* src/styles/sidebar.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .sidebar, .sidebar-header p, .sidebar-contact p {
@@ -9,18 +9,19 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: -400px; /* Ensure the sidebar is hidden when closed */
-    width: 28vw; /* Adjust width */
-    height: 95vh; /* Adjust height */
-    background-color: #0d0d0d; /* Dark background */
+    right: -50vw;
+    width: 28vw;
+    height: 95vh;
+    background-color: #0d0d0d;
     color: white;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
-    padding: 40px 30px; /* Adjust padding */
+    padding: 40px 50px 40px 50px; /* Increase padding-left for more space */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
+    justify-content: flex-start;
 }
+
 
 .sidebar.open {
     right: 0;
@@ -31,23 +32,40 @@
     cursor: pointer;
     align-self: flex-end;
     margin-bottom: 20px;
+    width: 50px; /* Set a width for the circle */
+    height: 50px; /* Set a height for the circle */
+    border: 2px solid white; /* Border to create the circle outline */
+    border-radius: 50%; /* Make it a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+.close-btn:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    background-color: #662f8f; /* Change background color on hover */
+    border-color: #abd038; /* Change border color on hover */
+    color: #abd038; /* Change X icon color on hover */
+}
+
 
 .sidebar-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
+    justify-content: flex-start;
     height: 100%;
+    position: relative;
 }
 
 .sidebar-header {
     text-align: left;
-    margin-bottom: 10px; /* Reduce space below header */
+    margin-bottom: 10px;
 }
 
 .sidebar-header h1 {
     font-size: 28px;
-    font-weight: 900; /* Extra bold for the heading */
+    font-weight: 900;
     margin-bottom: 10px;
     color: white;
 }
@@ -55,29 +73,57 @@
 .sidebar-header p {
     font-size: 16px;
     line-height: 1.6;
-    font-weight: 600; /* Slightly bolder for the paragraph text */
+    font-weight: 600;
     color: white;
 }
 
 .sidebar-header hr {
     border: 1;
     border-top: 1px solid;
-    margin-bottom: 10px; /* Reduce space below HR */
+    margin-bottom: 10px;
 }
 
 .sidebar-contact {
-    margin-top: 0; /* Ensure there's no margin on top */
+    margin-top: 0;
 }
 
 .sidebar-contact p {
     font-size: 16px;
     line-height: 1;
-    margin-bottom: 10px; /* Reduce space between contact items */
-    font-weight: 900; /* Bold contact details */
+    margin-bottom: 10px;
+    font-weight: 900;
     color: white;
 }
 
+.sidebar-contact p:nth-child(2) {
+    margin-bottom: 40px; /* Add more space below the address */
+}
+
 .sidebar-cta {
+    position: absolute;
+    bottom: 30%;
+    right: 30px;
+    text-align: right;
+}
+
+.cta-button {
+    background-color: #abd038;
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: auto; /* Keep this at the bottom */
+}
+
+.cta-button:hover {
+    background-color: #662f8f;
+    color: #abd038;
 }
